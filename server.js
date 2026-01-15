@@ -1,6 +1,3 @@
-// Simpele server om je chatbot te draaien
-// Je hoeft hier niets aan te veranderen!
-
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -50,7 +47,8 @@ const server = http.createServer((req, res) => {
 
 // Start de server
 server.listen(PORT, () => {
-    console.log('✅ Vistolabs chatbot draait op http://localhost:3000');
+    console.log(' Vistolabs chatbot draait op http://localhost:3000');
     console.log('   Open deze link in je browser!');
     console.log('   Druk op Ctrl+C om te stoppen.');
 });
+
