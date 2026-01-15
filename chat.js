@@ -9,7 +9,7 @@ let activeTab = 'individual'; // Welk tabblad is actief
 // Als de pagina laadt, haal de data op
 window.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('/data.json');
+        const response = await fetch('data.json');
         allData = await response.json();
         
         // Vul de dropdown met datasets
@@ -584,3 +584,4 @@ function displayOverview() {
     
     display.innerHTML = html;
 }
+
